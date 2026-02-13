@@ -15,7 +15,7 @@ function selectOption(option) {
         // Increase font size of "Yes" button
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
-        var newSize = parseFloat(currentFontSize) * 4; // Increase font size by  * 2px
+        var newSize = parseFloat(currentFontSize) * 2; // Increase font size by  * 2px
         yesButton.style.fontSize = newSize + 'px';
     } else {
         // If neither "Yes" nor "No" was clicked, show an alert message
@@ -30,7 +30,7 @@ function flashRainbowColors(callback) {
     var interval = setInterval(function() {
         document.body.style.backgroundColor = colors[i];
         i = (i + 1) % colors.length;
-    }, 100); // Change color every 200 milliseconds
+    }, 200); // Change color every 200 milliseconds
     setTimeout(function() {
         clearInterval(interval);
         document.body.style.backgroundColor = ''; // Reset background color
@@ -67,7 +67,7 @@ function displayCatHeart() {
     // Set the source (file path) for the cat-heart image
     catHeartImage.src = 'mirrorselfie'; // Assuming the cat-heart image is named "cat-heart.gif"
     // Set alternative text for the image (for accessibility)
-    catHeartImage.alt = 'mirrorselfie';
+    catHeartImage.alt = 'Cat Heart';
     // When the cat-heart image is fully loaded, add it to the image container
     catHeartImage.onload = function() {
         imageContainer.appendChild(catHeartImage);
