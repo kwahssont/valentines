@@ -65,7 +65,7 @@ function displayCatHeart() {
     // Create a new Image element for the cat-heart
     var catHeartImage = new Image();
     // Set the source (file path) for the cat-heart image
-    catHeartImage.src = 'mirrorselfie'; // Assuming the cat-heart image is named "cat-heart.gif"
+    catHeartImage.src = 'mirrorselfie.jpg'; // Assuming the cat-heart image is named "cat-heart.gif"
     // Set alternative text for the image (for accessibility)
     catHeartImage.alt = 'Cat Heart';
     // When the cat-heart image is fully loaded, add it to the image container
