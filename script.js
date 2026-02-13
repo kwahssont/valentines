@@ -73,6 +73,13 @@ function displayCatHeart() {
         imageContainer.appendChild(catHeartImage);
         // Hide the options container
         document.getElementById('options').style.display = 'none';
+        document.getElementById('yes-message').style.display = 'block';
+        const telegramUsername = 'kwahssont';
+        const textMeLink = document.getElementById('text-me');
+        textMeLink.href = `https://t.me/${telegramUsername}`;
+        textMeLink.style.display = 'inline-block';
+
+
     };
 }
 
